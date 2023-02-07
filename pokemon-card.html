@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon card</title>
+
+    <style>
+      .card {
+        background-color: #fdfa28;
+        height: 88mm;
+        width: 63mm;
+        padding: 10px;
+        border-radius: 10px;
+        font-family: sans-serif;
+      }
+      .inner-card {
+        background-color: rgb(156, 119, 188);
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+      .upper-header {
+        font-size: 0.5rem;
+        margin-top: 1mm;
+        margin-left: 5mm;
+      }
+      .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 5mm;
+        margin-right: 5mm;
+      }
+      .HP-container {
+        display: flex;
+        color: red;
+        font-size: 14px;
+        margin-top: 1px;
+        margin-left: 26mm;
+      }
+      .type_icon {
+        width: 18px;
+        height: 18px;
+      }
+      .image {
+        border: 1mm solid gold;
+        margin-left: 5mm;
+        margin-right: 5mm;
+        height: 35mm;
+        background-image: url(https://images.pokemontcg.io/base1/43.png);
+        background-position-x: 216px;
+        background-position-y: -40px;
+      }
+      .specs {
+        display: flex;
+        justify-content: center;
+        font-size: 0.5rem;
+        margin-top: 4px;
+        margin-left: 7mm;
+        margin-right: 7mm;
+        background-color: gold;
+      }
+      .attack {
+        display: flex;
+        margin-top: 9mm;
+        margin-left: 3mm;
+        margin-right: 3mm;
+        align-items: center;
+        border-bottom: 1px solid black;
+        padding-bottom: 9mm;
+        justify-content: space-between;
+      }
+      .psy-icon {
+        display: flex;
+        margin-left: 1mm;
+      }
+      .attack-1 {
+        display: inline;
+        padding-left: 3mm;
+        line-height: 7px;
+      }
+      .card_attack-name {
+        font-weight: bold;
+        font-size: 10px;
+      }
+      .card_attack-description-details {
+        font-size: 8px;
+      }
+      .attack-damage {
+        display: flex;
+        font-size: larger;
+      }
+
+      .strengths {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 5mm;
+        margin-right: 5mm;
+        font-size: 7px;
+      }
+      .weakness-icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .card-extra-info {
+        display: flex;
+        border: 1px solid gold;
+        font-size: 7px;
+        justify-content: center;
+        margin-left: 5mm;
+        margin-right: 5mm;
+        margin-top: -1mm;
+        line-height: 8px;
+        padding-left: 5px;
+      }
+      .card_rarity {
+        height: 12px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 3px;
+        margin-top: 4px;
+      }
+      .card_rarity img {
+        height: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="inner-card">
+        <div class="upper-header">Basic Pokémon</div>
+        <div class="header">
+          <div class="name-container">Abra</div>
+          <div class="HP-container">30 HP</div>
+          <div class="type_icon">
+            <img
+              src="https://bartduisters.com/trading-card-generator/img/psychic-classic.png"
+              width=" 16px"
+              height="16px"
+            />
+          </div>
+        </div>
+        <div class="image"></div>
+
+        <div class="specs">Psi Pokémon. Length: 2'11", Weight: 43 lbs.</div>
+        <div class="attack">
+          <div class="psy-icon">
+            <img
+              src="https://bartduisters.com/trading-card-generator/img/psychic-classic.png"
+              alt=""
+              width=" 15px"
+              height="15px"
+            />
+          </div>
+          <div class="attack-1">
+            <span class="card_attack-name">Psyshock</span>
+            <span class="card_attack-description-details">
+              Flip a coin. If heads, the Defending Pokémon is now Paralyzed.
+            </span>
+          </div>
+          <div class="attack-damage">10</div>
+        </div>
+        <div class="strengths">
+          <div class="card-weakness">
+            weakness
+            <div class="weakness-icon">
+              <img
+                src="https://bartduisters.com/trading-card-generator/img/psychic-classic.png"
+                alt=""
+                width=" 13px"
+                height="13px"
+              />
+            </div>
+            <img class="card__attack-cost" src="" />
+          </div>
+          <div class="card-resistence">
+            resistence
+            <div class="resistence-icon"></div>
+          </div>
+          <div class="card-retreatcost">
+            retreat cost
+            <div class="retreatcost-icon"></div>
+          </div>
+        </div>
+        <div class="card-extra-info">
+          Using its ability to read minds, it will identify impending danger and
+          teleport to safety.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          LV.10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#43
+        </div>
+        <div class="card_rarity">
+          <img
+            src="https://bartduisters.com/trading-card-generator/img/common.png"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
