@@ -1,0 +1,11 @@
+nav {
+    background-color: rgb(179, 209, 237);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  nav > .active {
+    border: solid 1px black;
+    border-radius: 20%;
+  }
