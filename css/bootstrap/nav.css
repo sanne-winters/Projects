@@ -1,5 +1,5 @@
 nav {
-    background-color: rgb(179, 209, 237);
+    background-color: white;
     padding: 20px;
     display: flex;
     align-items: center;
@@ -12,7 +12,5 @@ nav {
     border-radius: 20%;
   }
   navbar-logo{
-    display: flex;
-
-
+    padding-left: 2rem;
   }

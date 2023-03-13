@@ -14,9 +14,33 @@
     </style>
     <style>
       /* class */
-      .header-img {
+      .bg-img {
         width: 100%;
         height: auto;
+      }
+      .welkom-container {
+        position: relative;
+        text-align: center;
+        color: white;
+        display: flex;
+      }
+      .btn-contact {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: blue;
+        color: white;
+        font-size: 20px;
+        padding: 12px 24px;
+        border: none;
+        cursor: pointer;
+        border-radius: 10px;
+      }
+      .btn-contact:hover {
+        background-color: white;
+        color: blue;
       }
     </style>
     <link
@@ -41,11 +65,16 @@
       <a class="nav-link" href="blog.html">Blogs</a>
     </nav>
 
-    <img
-      class="header-img"
-      src="https://scontent.fbru2-1.fna.fbcdn.net/v/t39.30808-6/325416271_855711478986626_6659501740471206184_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=e3f864&_nc_ohc=YRxiWt22k1UAX-p35JD&_nc_ht=scontent.fbru2-1.fna&oh=00_AfCgQUx_izWfL66KqGeNMo6uO5BLmqucQPsYYtReH3A_dA&oe=640FF7A9"
-      alt="Waterwerken Peraux"
-    />
+    <div class="welkom-container">
+      <img
+        class="bg-img"
+        src="https://niceau.be/wp-content/uploads/2022/03/Niceau-sproeiers-backup.jpg"
+        alt="sproeisysteem"
+      />
+      <a class="btn-contact" href="contact.html" role="button"
+        >Vraag een vrijblijvende offerte</a
+      >
+    </div>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut provident odio
       autem suscipit corrupti officia quod consectetur, tempora natus mollitia
