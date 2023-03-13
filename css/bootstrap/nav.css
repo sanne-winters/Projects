@@ -2,10 +2,17 @@ nav {
     background-color: rgb(179, 209, 237);
     padding: 20px;
     display: flex;
-    justify-content: center;
+    align-items: center;
     gap: 10px;
+    position: sticky;
+    top: 0;
   }
   nav > .active {
     border: solid 1px black;
     border-radius: 20%;
+  }
+  navbar-logo{
+    display: flex;
+
+
   }

@@ -11,16 +11,21 @@
         border-color: rgb(179, 209, 237);
       }
       p {
+        padding-top: 1rem;
         margin-left: 2rem;
-        max-width: 35rem;
+        max-width: 34rem;
       }
-      .email {
+      .emailcontact {
         display: flex;
         margin-left: 2rem;
       }
       .emailadress {
         margin-left: 1rem;
         padding-top: 10px;
+      }
+      .gsmcontact {
+        display: flex;
+        margin-left: 2rem;
       }
     </style>
 
@@ -34,7 +39,14 @@
   </head>
   <body>
     <nav class="nav">
-      <a class="nav-link" href="index.html">Home</a>
+      <a class="navbar-logo" href="#">
+        <img
+          src="https://scontent.fbru2-1.fna.fbcdn.net/v/t39.30808-6/325416271_855711478986626_6659501740471206184_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=e3f864&_nc_ohc=YRxiWt22k1UAX-p35JD&_nc_ht=scontent.fbru2-1.fna&oh=00_AfCgQUx_izWfL66KqGeNMo6uO5BLmqucQPsYYtReH3A_dA&oe=640FF7A9"
+          alt="logo"
+          width="200"
+          height="auto"
+        /> </a
+      ><a class="nav-link" href="index.html">Home</a>
       <a class="nav-link" href="about.html">Over Ons</a>
       <a class="nav-link active" href="contact.html">Contact</a>
       <a class="nav-link" href="blog.html">Blogs</a>
@@ -42,20 +54,31 @@
 
     <h1>Contact</h1>
     <p>
-      Wilt u meer informatie over onze service of wilt u een project bespreken
-      met onze specialisten? Geef ons een seintje. We maken met veel plezier
-      tijd vrij om te luisteren naar uw plannen of wensen.
+      Wilt u meer informatie over onze service of wilt u een project bespreken.
+      Geef ons een seintje. We maken met veel plezier tijd vrij om te luisteren
+      naar uw plannen of wensen.
     </p>
     <p>Contacteer ons!</p>
     <p>Doorlopend bereikbaar van 08u00 t.e.m. 17u00</p>
-    <div class="email">
+    <div class="emailcontact">
       <img
         src="https://th.bing.com/th/id/R.6ecaa6cead33516a38cf08cc8276f27d?rik=J8FTGIXEKmSegg&riu=http%3a%2f%2fwww.tdpi.cl%2fwp-content%2fuploads%2f2016%2f08%2femail-200x200.jpg&ehk=D22RsCsAau5q04sjKH2wv3uYKFToXoYzOATKxSVUmoE%3d&risl=&pid=ImgRaw&r=0"
         alt="email-icon"
         width="40"
         height="40"
       />
-      <p class="emailadress">nickperaux@gmail.com</p>
+      <p class="emailadress">
+        <a href="mailto: nickperaux@gmail.com">nickperaux@gmail.com</a>
+      </p>
+    </div>
+    <div class="gsmcontact">
+      <img
+        src="https://th.bing.com/th/id/R.8a02427be31dcc1064f4ec4e999f87c9?rik=n0boDSLmVdVsbw&riu=http%3a%2f%2fwww.clipartbest.com%2fcliparts%2fdT8%2f6xL%2fdT86xLxac.png&ehk=NECdJFQOvxjnHNEhCpBfL2tY%2bs6VgWRvrY1gEZMHGX4%3d&risl=&pid=ImgRaw&r=0"
+        alt="gsm-icon"
+        width="45px"
+        height="45px"
+      />
+      <p class="gsmnummer">0497 16 80 18</p>
     </div>
 
     <script
