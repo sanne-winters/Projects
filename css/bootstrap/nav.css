@@ -6,6 +6,7 @@ nav {
     gap: 10px;
     position: sticky;
     top: 0;
+    z-index: 1;
   }
   nav > .active {
     border: solid 1px  rgb(179, 209, 237);
