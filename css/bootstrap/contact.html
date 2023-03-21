@@ -27,6 +27,14 @@
         display: flex;
         margin-left: 2rem;
       }
+
+      .mb-3 {
+        margin-left: 2rem;
+        color: blue;
+      }
+      .sendbtn {
+        margin-top: 1rem;
+      }
     </style>
 
     <link rel="stylesheet" href="nav.css" />
@@ -49,7 +57,7 @@
       ><a class="nav-link" href="index.html">Home</a>
       <a class="nav-link" href="about.html">Over Ons</a>
       <a class="nav-link active" href="contact.html">Contact</a>
-      <a class="nav-link" href="blog.html">Blogs</a>
+      <a class="nav-link" href="services.html">Diensten</a>
     </nav>
 
     <h1>Contact</h1>
@@ -60,17 +68,7 @@
     </p>
     <p>Contacteer ons!</p>
     <p>Doorlopend bereikbaar van 08u00 t.e.m. 17u00</p>
-    <div class="emailcontact">
-      <img
-        src="https://th.bing.com/th/id/R.6ecaa6cead33516a38cf08cc8276f27d?rik=J8FTGIXEKmSegg&riu=http%3a%2f%2fwww.tdpi.cl%2fwp-content%2fuploads%2f2016%2f08%2femail-200x200.jpg&ehk=D22RsCsAau5q04sjKH2wv3uYKFToXoYzOATKxSVUmoE%3d&risl=&pid=ImgRaw&r=0"
-        alt="email-icon"
-        width="40"
-        height="40"
-      />
-      <p class="emailadress">
-        <a href="mailto: nickperaux@gmail.com">nickperaux@gmail.com</a>
-      </p>
-    </div>
+
     <div class="gsmcontact">
       <img
         src="https://th.bing.com/th/id/R.8a02427be31dcc1064f4ec4e999f87c9?rik=n0boDSLmVdVsbw&riu=http%3a%2f%2fwww.clipartbest.com%2fcliparts%2fdT8%2f6xL%2fdT86xLxac.png&ehk=NECdJFQOvxjnHNEhCpBfL2tY%2bs6VgWRvrY1gEZMHGX4%3d&risl=&pid=ImgRaw&r=0"
@@ -79,6 +77,35 @@
         height="45px"
       />
       <p class="gsmnummer">0497 16 80 18</p>
+    </div>
+    <div class="mb-3 emailadress">
+      <label for="exampleFormControlInput1" class="form-label"
+        >Email-adres</label
+      >
+      <input
+        type="email"
+        class="form-control"
+        id="exampleFormControlInput1"
+        placeholder="name@example.com"
+      />
+    </div>
+    <div class="mb-3 questionform">
+      <label for="exampleFormControlTextarea1" class="form-label"
+        >Mijn vraag</label
+      >
+      <textarea
+        class="form-control"
+        id="exampleFormControlTextarea1"
+        rows="5"
+      ></textarea>
+
+      <a
+        class="btn btn-primary sendbtn"
+        href="mailto: nickperaux@gmail.com"
+        role="submit"
+        aria-disabled="true"
+        >Verzend</a
+      >
     </div>
 
     <script
