@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cookieclicker</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      h1 {
+        margin: 1rem;
+        margin-left: 2rem;
+      }
+      .mainCookie {
+        margin: 1rem;
+        margin-left: 6rem;
+      }
+      .twoCookies {
+        margin: 2rem;
+        margin-left: 6rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Click the cookie!</h1>
+    <div class="mainCookie">
+      <button
+        id="cookie1"
+        type="button"
+        class="btn btn-link cookiebtn"
+        onclick="clicker()"
+      >
+        <img
+          src="https://th.bing.com/th/id/R.6b8eb8cdab18e9dab036b392187e1df0?rik=vZMpo%2fnF1p76Rw&riu=http%3a%2f%2fclipart-library.com%2fimages_k%2fchocolate-chip-cookie-transparent%2fchocolate-chip-cookie-transparent-3.png&ehk=8ScJvVUMSckJ6jQBrEEKlOqfm3GTDgFJhnCVx14PxNY%3d&risl=&pid=ImgRaw&r=0"
+          alt="cookie"
+          width="100"
+        />
+      </button>
+      <p id="aantalClicks">Aantal clicks: 0</p>
+    </div>
+    <div class="twoCookies">
+      <button
+        id="cookie2"
+        type="button"
+        class="btn btn-link dubbelcookiebtn"
+        onclick="dubbelepunten(aantalClicks)"
+      >
+        <img
+          src="https://th.bing.com/th/id/R.116c45e910d9bd19815fb1630438fd5d?rik=wF4HXCiGhEw2%2bw&pid=ImgRaw&r=0"
+          alt="2cookies"
+          width="100"
+        />
+      </button>
+    </div>
+    <script>
+      let aantalClicks = 0;
+      let cookie1 = document.getElementById("cookie1");
+
+      function clicker() {
+        document.getElementById("aantalClicks").textContent =
+          "Aantal clicks: " + aantalClicks++;
+        if (aantalClicks === 10) {
+          document.getElementById("cookie2").style.display = "block";
+          cookie1.disabled = true;
+
+        }
+      }
+          function dubbelepunten(aantalClicks) {
+          "Aantal clicks: " + AantalCookies +2;
+          }
+      src =
+        "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js";
+      integrity =
+        "sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN";
+      crossorigin = "anonymous";
+    </script>
+  </body>
+</html>
