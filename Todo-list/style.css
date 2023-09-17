@@ -1,0 +1,96 @@
+/* Add your CSS styles here */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+input[type="text"] {
+    width: 96%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: skyblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    cursor: grab;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+li span {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.delete-button {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.delete-button:hover{
+    background-color: darkred;
+}
+
+.complete-button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.complete-button:hover{
+    background-color: darkgreen;
+}
+.up-button {
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.down-button {
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.checked {
+    text-decoration: line-through;
+    color: #888;
+}
