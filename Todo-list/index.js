@@ -63,3 +63,8 @@ taskInput.addEventListener("keydown", function(event) {
         addTask();
     }
 });
+// Function to mark a task as complete
+function completeTask(button) {
+    const taskItem = button.parentElement;
+    taskItem.classList.toggle("completed");
+}

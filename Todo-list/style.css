@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-    max-width: 500px;
+    max-width: 800px;
     margin: 0 auto;
     background-color: white;
     padding: 20px;
@@ -20,7 +20,7 @@ h1 {
 }
 
 input[type="text"] {
-    width: 96%;
+    width: 97%;
     padding: 10px;
     margin-bottom: 10px;
 }
@@ -56,10 +56,11 @@ li {
 
 li span {
     flex-grow: 1;
-    margin-right: 10px;
+    margin-right: 50px;
 }
 
 .delete-button {
+    width: 100px;
     background-color: #ff0000;
     color: white;
     border: none;
@@ -71,6 +72,7 @@ li span {
 }
 
 .complete-button {
+    width: 100px;
     background-color: green;
     color: white;
     border: none;
@@ -80,17 +82,20 @@ li span {
 .complete-button:hover{
     background-color: darkgreen;
 }
+.completed {
+    text-decoration: line-through;
+    color: #888;
+}
 .up-button {
+    width: 100px;
     border: none;
     padding: 5px 10px;
     cursor: pointer;
 }
 .down-button {
+    width: 100px;
     border: none;
     padding: 5px 10px;
     cursor: pointer;
 }
-.checked {
-    text-decoration: line-through;
-    color: #888;
-}
+
